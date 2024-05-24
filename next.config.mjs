@@ -1,5 +1,4 @@
 import { build } from "velite";
-
 /** @type {import('next').NextConfig} */
 export default {
   // othor next config here...
@@ -8,7 +7,6 @@ export default {
     return config;
   },
 };
-
 class VeliteWebpackPlugin {
   static started = false;
   constructor(/** @type {import('velite').Options} */ options = {}) {
