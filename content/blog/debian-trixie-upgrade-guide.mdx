@@ -1,1 +1,47 @@
+---
+title: Debian trixie upgrade guide
+description: This is my guide on how to upgrade to debian 13
+date: 2024-05-25
+published: true
+---
 
+This is a short guide on to upgrade your system to Debian 13 which is testing and packages are a lot more up to date for example Hyprland needs Debian 13. So do at your own risk and you can do it from pretty much any version to start run this command
+
+```bash
+sudo nano /etc/apt/sources.list 
+```
+
+Replace where it says your Debian version code name that you have installed to trixie e.g
+
+```bash
+deb http://deb.debian.org/debian bookworm main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+
+deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+```
+
+To
+
+```bash
+deb http://deb.debian.org/debian trixie main non-free-firmware
+deb-src http://deb.debian.org/debian trixie main non-free-firmware
+
+deb http://deb.debian.org/debian-security/ trixie-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ trixie-security main non-free-firmware
+
+deb http://deb.debian.org/debian trixie-updates main non-free-firmware
+deb-src http://deb.debian.org/debian trixie-updates main non-free-firmware
+```
+
+Enter these commands to upgrade
+
+```bash
+sudo apt update
+sudo apt full-upgrade -y
+```
+
+Then reboot your system and run neofetch to double check  and you should have Debian 13.
