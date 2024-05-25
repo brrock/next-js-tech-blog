@@ -2,7 +2,7 @@
 title: Github Flavoured Markdown CheatSheet
 description: A markdown cheat sheet for GFM
 date: 2024-03-03
-published: true
+published: false
 ---
 
 # Introduction
@@ -76,10 +76,10 @@ _You **can** combine them_
 ```
 
 1. Item 1
-1. Item 2
-1. Item 3
+2. Item 2
+3. Item 3
    1. Item 3a
-   1. Item 3b
+   2. Item 3b
 
 ## Images
 
@@ -128,7 +128,7 @@ I think you should use an
 
 Here’s an example of how you can use syntax highlighting with [GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/):
 
-````mdx
+```mdx
 ```js:fancyAlert.js
 function fancyAlert(arg) {
   if (arg) {
@@ -136,7 +136,7 @@ function fancyAlert(arg) {
   }
 }
 ```
-````
+```
 
 And here's how it looks - nicely colored with styled code titles!
 
@@ -156,9 +156,7 @@ Here is a simple footnote[^1]. With some additional text after it.
 [^1]: My reference.
 ```
 
-Here is a simple footnote[^1]. With some additional text after it.
-
-[^1]: My reference.
+Here is a simple footnote. With some additional text after it.
 
 ## Task Lists
 
