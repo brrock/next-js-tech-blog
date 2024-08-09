@@ -11,8 +11,12 @@
             "id": "30ae13bb40090deb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/blog/debian-trixie-upgrade-guide.mdx",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "content/blog/debian-trixie-upgrade-guide.mdx",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "content/blog/debian-trixie-upgrade-guide.mdx",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "content/blog/debian-trixie-upgrade-guide.mdx"
+          }
         }
       }
     ],
@@ -126,19 +134,18 @@
   },
   "active": "30ae13bb40090deb",
   "lastOpenFiles": [
-    "content/blog/debian-trixie-upgrade-guide.mdx",
     "Untitled.mdx",
+    "content/blog/debian-trixie-upgrade-guide.mdx",
+    "public/next.svg",
     "README.md",
     "velite.config.ts",
     "tsconfig.json",
     "tailwind.config.ts",
     "styles/mdx.css",
     "public/vercel.svg",
-    "public/next.svg",
     "postcss.config.cjs",
     "package.json",
     "package-lock.json",
-    "next.config.mjs",
-    "lib/utils.ts"
+    "next.config.mjs"
   ]
 }
