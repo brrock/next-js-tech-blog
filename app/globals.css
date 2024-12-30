@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://cdn.jsdelivr.net/npm/non.geist@1.4.1/dist/mono.css');
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -62,6 +62,9 @@
 	* {
 		@apply border-border;
 	}
+	code {
+  font-family: 'Geist Mono Variable';
+}
 	.prose {
 		@apply text-foreground;
 	}
