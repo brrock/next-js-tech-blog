@@ -7,7 +7,7 @@ import { Providers } from "@/components/providers";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-	title: "Portfolio",
+	title: "Benjy Ross",
 	description: "Personal portfolio showcasing projects and skills",
 };
 

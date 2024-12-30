@@ -4,11 +4,12 @@ import { SiteHeader } from "@/components/site-header";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { Providers } from "@/components/providers";
+import { siteConfig } from "@/config/site";
 
 export const metadata = {
-	title: "Amazing Portfolio",
-	description:
-		"A full-stack animated Next.js portfolio showcasing projects and tech stack",
+	title: siteConfig.name,
+	description: siteConfig.description,
+	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
 };
 
 export default function RootLayout({

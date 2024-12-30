@@ -1,11 +1,11 @@
 export const siteConfig = {
-	name: "Benjy Ross ",
+	name: "Benjy Ross",
 	url: "https://benjyross.xyz",
-	description: "Nextjs 15 blog using velite, tailwind and shadcn",
+	description:
+		"Nextjs 15 portfolio using velite, tailwind and shadcn, and some dev knowledge",
 	author: "Benjy Ross",
 	links: {
 		github: "https://github.com/brrock",
-		personalSite: "https://benjyross.xyz",
 	},
 };
 
