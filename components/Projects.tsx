@@ -48,18 +48,19 @@ const projects = [
 	{
 		title: "GameX",
 		description:
-			"A collaborative task management application with real-time updates and team features.",
+			"A A open source games app",
 		tech: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS", "clerk auth"],
 		image: (
 			<div className="w-full h-full bg-gradient-to-r from-blue-500 to-red-500 rounded-lg" />
 		),
 		wip: true,
+  github: "https://github.com/brrock/gamex"
 		link: "https://gamex.benjyross.xyz",
 	},
 	{
 		title: "Tech Blog and Portfolio",
 		description:
-			"A tech blog and portfolio website for Benjy Ross. It features a blog, a portfolio, and a contact form.",
+			"A tech blog and portfolio website. It features a blog, a portfolio, and a contact form.",
 		tech: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS", "clerk auth"],
 		image: (
 			<Skeleton className="w-full h-full bg-gradient-to-r from-blue-500 to-red-500 rounded-lg" />
