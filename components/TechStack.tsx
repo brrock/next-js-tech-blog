@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Code, FileCode } from "lucide-react";
+import { Code } from "lucide-react";
 
 type Technology = {
 	name: string;
@@ -11,7 +11,7 @@ type Technology = {
 
 const technologies: Technology[] = [
 	{ name: "JavaScript", icon: <Code size={24} /> },
-	{ name: "TypeScript", icon: <FileCode size={24} /> },
+	{ name: "TypeScript", icon: <Code size={24} /> },
 	{ name: "React", icon: <Code size={24} /> },
 	{ name: "Next.js", icon: <Code size={24} /> },
 	{ name: "Node.js", icon: <Code size={24} /> },
