@@ -2,7 +2,7 @@ import { defineConfig, defineCollection, s } from "velite";
 import rehypeSlug from "rehype-slug";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-
+import { GeistMono } from "geist/font/mono";
 const computedFields = <T extends { slug: string }>(data: T) => ({
 	...data,
 	slugAsParams: data.slug.split("/").slice(1).join("/"),
@@ -42,7 +42,7 @@ export default defineConfig({
 				{
 					behavior: "wrap",
 					properties: {
-						className: ["subheading-anchor"],
+						className: ["subheading-anchor", GeistMono.className],
 						ariaLabel: "Link to section",
 					},
 				},
