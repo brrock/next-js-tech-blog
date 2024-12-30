@@ -54,7 +54,7 @@ const projects = [
 			<div className="w-full h-full bg-gradient-to-r from-blue-500 to-red-500 rounded-lg" />
 		),
 		wip: true,
-  github: "https://github.com/brrock/gamex"
+  github: "https://github.com/brrock/gamex",
 		link: "https://gamex.benjyross.xyz",
 	},
 	{
