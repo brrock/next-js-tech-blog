@@ -1,25 +1,18 @@
+import Image from "next/image";
+
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-	logo: (props: IconProps) => (
-		// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
+	logo: (props: React.HTMLAttributes<HTMLImageElement>) => (
+		<Image
+			src="/favicon.ico"
+			alt="Benjy Ross"
+			width={24}
+			height={24}
 			{...props}
-			aria-label="logo" // Added aria-label for accessibility
-		>
-			<path d="M4 11a9 9 0 0 1 9 9" />
-			<path d="M4 4a16 16 0 0 1 16 16" />
-			<circle cx="5" cy="19" r="1" />
-		</svg>
+		/>
 	),
-	twitter: (props: IconProps) => (
+	twitter: (props: React.HTMLAttributes<SVGElement>) => (
 		// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
 		<svg
 			{...props}
