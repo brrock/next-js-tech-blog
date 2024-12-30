@@ -1,48 +1,34 @@
-import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { SiteHeader } from "@/components/site-header";
-import { Providers } from "@/components/providers";
-import { siteConfig } from "@/config/site";
-import { SiteFooter } from "@/components/site-footer";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+import "./globals.css";
+import { Providers } from "@/components/providers";
+import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
-  description: siteConfig.description,
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
-};
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+	title: "Portfolio",
+	description: "Personal portfolio showcasing projects and skills",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html suppressHydrationWarning lang="en" className="scroll-pt-[3.5rem]">
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.variable
-        )}
-      >
-        <Providers>
-          <div className="relative flex min-h-dvh flex-col bg-background">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
-        </Providers>
-      </body>
-    </html>
-  );
+	return (
+		<html
+			lang="en"
+			suppressHydrationWarning
+			className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+		>
+			<body className="min-h-screen bg-background font-sans antialiased">
+				<Providers>
+					<div className="relative flex min-h-screen flex-col">
+						<div className="flex-1">{children}</div>
+					</div>
+				</Providers>
+			</body>
+		</html>
+	);
 }
